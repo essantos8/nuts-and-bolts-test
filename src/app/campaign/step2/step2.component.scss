@@ -1,0 +1,17 @@
+.page { display: grid; gap: 1rem; }
+.page__header { display: flex; align-items: baseline; justify-content: space-between; }
+.card { background:#fff; border:1px solid #eee; border-radius:12px; padding:1rem; }
+.input-row { display:flex; gap:.5rem; align-items:center; margin:.5rem 0; }
+.label { width:160px; color:#666; }
+.input { flex:1; padding:.5rem .75rem; border:1px solid #ddd; border-radius:8px; }
+.file-input { flex:1; padding:1rem; border:1px dashed #bbb; border-radius:8px; color:#777; text-align:center; }
+.button { padding:.5rem .75rem; border-radius:8px; background:#111; color:#fff; border:0; }
+.button--primary { background:#6a5acd; }
+.or { text-align:center; color:#999; margin:.5rem 0; }
+.grid { display:grid; gap:.75rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.sub { font-size:.85rem; color:#666; }
+.value { padding:.5rem .75rem; background:#fafafa; border:1px solid #eee; border-radius:8px; }
+.bullets { margin:.5rem 0 0; }
+.page__actions { display:flex; justify-content: space-between; align-items:center; }
+
+

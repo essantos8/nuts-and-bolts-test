@@ -1,0 +1,31 @@
+<div class="page">
+  <header class="page__header">
+    <h1>Campaign Creation</h1>
+    <span class="step">Step 4 of 4</span>
+  </header>
+  <section class="card">
+    <h3>Recipients</h3>
+    <div class="input-row">
+      <label class="label">Upload CSV</label>
+      <div class="file-input">Drop CSV or click to upload</div>
+    </div>
+  </section>
+  <section class="card">
+    <h3>Email draft</h3>
+    <div class="input-row">
+      <label class="label">Subject</label>
+    <input class="input" [(ngModel)]="subject" (ngModelChange)="onEmailDraftChanged(subject, body)" placeholder="Collab with Acme — Quick intro" />
+    </div>
+    <div class="input-row">
+      <label class="label">Body</label>
+    <textarea class="textarea" rows="8" [(ngModel)]="body" (ngModelChange)="onEmailDraftChanged(subject, body)" placeholder="Hey {first_name},\n\nWe love your content and think our product would be a great fit.\n\n— Team Acme"></textarea>
+    </div>
+  </section>
+  <footer class="page__actions">
+    <a class="link" routerLink="/campaign/step-3">Back</a>
+    <button class="button">Save draft</button>
+    <a class="button button--primary" routerLink="/campaign/step-1" (click)="onLaunch()">Launch!</a>
+  </footer>
+</div>
+
+

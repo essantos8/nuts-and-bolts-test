@@ -1,0 +1,14 @@
+.page { display:grid; gap:1rem; }
+.page__header { display:flex; align-items:baseline; justify-content:space-between; }
+.card { background:#fff; border:1px solid #eee; border-radius:12px; padding:1rem; }
+.options { display:grid; gap:.5rem; }
+.option { display:flex; gap:.5rem; align-items:center; color:#444; }
+.input-row { display:flex; gap:.5rem; align-items:center; margin:.5rem 0; }
+.label { width:180px; color:#666; }
+.input { flex:1; padding:.5rem .75rem; border:1px solid #ddd; border-radius:8px; }
+.button { padding:.5rem .75rem; border-radius:8px; background:#111; color:#fff; border:0; }
+.button--primary { background:#6a5acd; }
+.link { color:#6a5acd; text-decoration:none; }
+.page__actions { display:flex; justify-content:space-between; align-items:center; }
+
+

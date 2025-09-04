@@ -1,0 +1,68 @@
+<div class="page" role="main" aria-labelledby="page-title">
+  <header class="page__header">
+    <div class="page__titles">
+      <h1 id="page-title">Campaign Creation</h1>
+      <p class="subtitle">Pick the campaign type to get started.</p>
+    </div>
+    <span class="chip">Step 1 of 4</span>
+  </header>
+
+  <section class="cards" aria-label="Campaign type options">
+    <article class="card" tabindex="0" aria-label="Seeding / Gifting">
+      <div class="card__head">
+        <div class="emoji" aria-hidden="true">🎁</div>
+        <h3>Seeding / Gifting</h3>
+      </div>
+      <p class="muted">Send product to creators in exchange for content. No payment.</p>
+      <ul class="bullets">
+        <li>Low cost</li>
+        <li>Fast to launch</li>
+        <li>Authentic content</li>
+      </ul>
+      <div class="actions">
+        <a class="button button--primary" routerLink="/campaign/step-2" (click)="onCampaignTypeSelected('Seeding / Gifting')">Choose</a>
+        <button class="button button--ghost" type="button">Learn more</button>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0" aria-label="Paid Promotion">
+      <div class="card__head">
+        <div class="emoji" aria-hidden="true">💼</div>
+        <h3>Paid Promotion</h3>
+      </div>
+      <p class="muted">Sponsor creators for guaranteed posts matching your brief.</p>
+      <ul class="bullets">
+        <li>Predictable deliverables</li>
+        <li>Broader reach</li>
+        <li>Contracted terms</li>
+      </ul>
+      <div class="actions">
+        <a class="button button--primary" routerLink="/campaign/step-2" (click)="onCampaignTypeSelected('Paid Promotion')">Choose</a>
+        <button class="button button--ghost" type="button">Learn more</button>
+      </div>
+    </article>
+
+    <article class="card" tabindex="0" aria-label="Other">
+      <div class="card__head">
+        <div class="emoji" aria-hidden="true">🧩</div>
+        <h3>Other</h3>
+      </div>
+      <p class="muted">Run a custom or hybrid campaign type.</p>
+      <ul class="bullets">
+        <li>Flexible format</li>
+        <li>Define your own rules</li>
+      </ul>
+      <div class="actions">
+        <a class="button button--primary" routerLink="/campaign/step-2" (click)="onCampaignTypeSelected('Other')">Choose</a>
+        <button class="button button--ghost" type="button">Learn more</button>
+      </div>
+    </article>
+  </section>
+
+  <footer class="page__actions">
+    <a class="link" routerLink="/">Back</a>
+    <a class="button button--primary" routerLink="/campaign/step-2">Next</a>
+  </footer>
+</div>
+
+

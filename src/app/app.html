@@ -1,0 +1,38 @@
+<header class="topnav" role="banner">
+  <div class="topnav__inner">
+    <div class="topnav__left">
+      <img src="assets/figma/cheerful-icon.png" alt="Cheerful" class="brand-icon" width="28" height="28" />
+      <h1 class="topnav__title">Untitled Campaign</h1>
+    </div>
+    <img src="assets/figma/profile-ellipse-53f48c.png" alt="Profile" class="profile" width="32" height="32" />
+  </div>
+  <div class="topnav__divider"></div>
+</header>
+
+<div class="layout">
+  <aside class="leftnav" aria-label="App Navigation">
+    <div class="leftnav__top">
+      <a routerLink="/campaign/step-1" routerLinkActive="leftnav__link--active" [routerLinkActiveOptions]="{ exact: true }" class="leftnav__link" aria-label="Home">
+        <img src="assets/figma/nav-icon-1.svg" alt="Home" width="16" height="16" />
+      </a>
+      </div>
+    <nav class="leftnav__middle">
+      <a routerLink="/campaign/step-2" routerLinkActive="leftnav__link--active" class="leftnav__link" aria-label="Brief">
+        <img src="assets/figma/nav-icon-2.svg" alt="Brief" width="16" height="16" />
+      </a>
+      <a routerLink="/campaign/step-3" routerLinkActive="leftnav__link--active" class="leftnav__link" aria-label="Preferences">
+        <img src="assets/figma/nav-icon-3.svg" alt="Preferences" width="16" height="16" />
+      </a>
+      <a routerLink="/campaign/step-4" routerLinkActive="leftnav__link--active" class="leftnav__link" aria-label="Launch">
+        <img src="assets/figma/nav-icon-4.svg" alt="Launch" width="16" height="16" />
+      </a>
+    </nav>
+    <div class="leftnav__bottom">
+      <img src="assets/figma/profile-ellipse-53f48c.png" alt="Profile" class="leftnav__avatar" width="28" height="28" />
+    </div>
+  </aside>
+
+  <main class="app-main">
+<router-outlet />
+  </main>
+</div>

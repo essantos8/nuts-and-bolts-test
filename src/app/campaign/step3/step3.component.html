@@ -1,0 +1,40 @@
+<div class="page">
+  <header class="page__header">
+    <h1>Campaign Creation</h1>
+    <span class="step">Step 3 of 4</span>
+  </header>
+  <section class="card">
+    <h3>Email sending</h3>
+    <div class="options">
+          <label class="option">
+            <input type="radio" name="email" checked (change)="onEmailSendingOptionSelected('Send via Cheerful')">
+            Send via Cheerful
+          </label>
+          <label class="option">
+            <input type="radio" name="email" (change)="onEmailSendingOptionSelected('Use external (Gmail/Outlook)')">
+            Use external (Gmail/Outlook)
+          </label>
+    </div>
+  </section>
+  <section class="card">
+    <h3>Google Sheet update</h3>
+    <label class="option">
+      <input type="checkbox" [checked]="true" (change)="onGoogleSheetUpdate({ enabled: $event.target.checked, sheetUrl: sheetUrl, columns: columns })">
+      Update a Google Sheet with campaign progress
+    </label>
+    <div class="input-row">
+      <label class="label">Sheet URL</label>
+      <input class="input" [(ngModel)]="sheetUrl" placeholder="https://docs.google.com/spreadsheets/..." />
+    </div>
+    <div class="input-row">
+      <label class="label">Columns to update</label>
+      <input class="input" [(ngModel)]="columns" placeholder="Status, Handle, Email, Notes" />
+    </div>
+  </section>
+  <footer class="page__actions">
+    <a class="link" routerLink="/campaign/step-2">Back</a>
+    <a class="button button--primary" routerLink="/campaign/step-4">Next</a>
+  </footer>
+</div>
+
+
