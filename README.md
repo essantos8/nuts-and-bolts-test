@@ -1,4 +1,3 @@
-[nuts and bolts.md](https://github.com/user-attachments/files/22140624/nuts.and.bolts.md)
 # HOW TO USE
 
 1. Install [node.js](http://node.js) and Angular on your system.  
